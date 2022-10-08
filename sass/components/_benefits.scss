@@ -1,0 +1,35 @@
+/* переваги */
+.benefits {
+  @extend %list;
+  display: flex;
+  padding-bottom: 0;
+}
+
+.benefits__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: rgba(245, 244, 250, 1);
+
+  &:hover svg {
+    fill: var(--accent-text-color);
+  }
+}
+.benefits__icon {
+  transition: fill 250ms var(--animation-timing-function);
+}
+
+.benefits__item:not(:last-child) {
+  padding-right: 30px;
+}
+
+.benefits__title {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.1;
+
+  margin-bottom: 10px;
+}

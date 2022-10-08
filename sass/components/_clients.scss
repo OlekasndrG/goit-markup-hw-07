@@ -1,0 +1,43 @@
+.clients {
+  @extend %list;
+  text-align: center;
+  background-color: var(--background-main-color);
+}
+
+.clients__list {
+  @extend %list;
+  display: flex;
+  gap: 30px;
+}
+.clients__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 92px;
+}
+.clients__link {
+  @extend %link;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  transition: border 250ms var(--animation-timing-function);
+
+  &:hover svg {
+    fill: var(--accent-text-color);
+  }
+  &:hover {
+    border: 1px solid var(--accent-text-color);
+  }
+}
+.clients__icon {
+  width: 170px;
+  height: 92px;
+  fill: rgba(175, 177, 184, 1);
+  transition: fill 250ms var(--animation-timing-function);
+}
